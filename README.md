@@ -2,48 +2,45 @@
 
 Repository to keep track of what I've learned about the basics of Tkinter.
 
-## Como usar este repositorio
+## How to use this repository
 
-Si deseas trabajar localmente necesitarás:
+1. Clone this repository
+2. Create a Python virtual environment
+3. Play with the code!
 
-1. Clonar este repositorio
-2. Crear un entorno virtual de python
-3. Instalar los paquetes necesarios
-4. ¡Escribir tu código!
-
-La manera recomendada de manejar tus entornos virtuales es con la herramienta `uv` [docs](https://docs.astral.sh/uv/)
-en Mac/Linux
+The recommended way to manage your virtual environments is with the tool `uv` [docs](https://docs.astral.sh/uv/)
+in Mac/Linux
 
 ```shell
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-en Windows
+in Windows
 
 ```shell
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-### Clonar el repositorio
+### Clone the repository
 
-Utiliza `git`
+Use `git`
 
 ```shell
 git clone https://github.com/AlexRFarnes/tkinter_basics
 ```
 
-### Crear un entorno virtual de python
+### Create your Python virtual environment
 
-Entra al repositorio **c**ambiando de **d**irectorio (`cd`) y ejecuta uv sync
+Change into the repository **c**hange **d**irectory (`cd`) and execute command `uv sync`
 
 ```shell
 cd tkinter_basics
 uv sync
 ```
 
-Esto va a crear un entorno virtual en `.venv/` e instalar los paquetes necesarios
+This will create a virtual environment in `.venv/`
 
-Si deseas usar `venv` (el paquete incluido con tu python)
+If you prefer to use `venv` (the module included with Python)
 
 ```shell
 cd tkinter_basics
