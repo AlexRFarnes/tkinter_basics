@@ -40,7 +40,21 @@ table.pack()
 for i in range(100):
     first_name = choice(first_names)
     last_name = choice(last_names)
-    email = first_name + last_name + "@gmail.com"
-    table.insert(parent="", index=i, values=(first_name, last_name, email))
+    email = first_name[0] + last_name + "@gmail.com"
+    table.insert(parent="", index=0, values=(first_name, last_name, email))
+
+
+def item_select(_):
+    for i in table.selection():
+        print(table.item(i)["values"])
+
+
+def item_delete(_):
+    for i in table.selection():
+        table.delete(i)
+
+
+table.bind("<<TreeviewSelect>>", item_select)
+table.bind("<Delete>", item_delete)
 
 window.mainloop()
