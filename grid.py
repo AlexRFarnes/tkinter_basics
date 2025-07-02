@@ -8,8 +8,6 @@ window = tk.Tk()
 window.title("Pack Parenting")
 window.geometry("600x400")
 
-# Top frame
-
 label_1 = ttk.Label(window, text="Label 1", background="red")
 label_2 = ttk.Label(window, text="Label 2", background="blue")
 label_3 = ttk.Label(window, text="Label 3", background="green")
